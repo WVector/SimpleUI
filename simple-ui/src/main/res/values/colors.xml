@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">@color/main_color</color>-->
+    <!--<color name="colorPrimaryDark">@color/main_color</color>-->
+    <!--<color name="colorAccent">@color/second_color</color>-->
+
+
+    <!--<color name="main_color">#ffde03</color>-->
+    <!--<color name="second_color">#FF111111</color>-->
+    <!--<color name="head_view_text_color">#282828</color>-->
+
+
+
+    <!--<color name="font_main_color">#282828</color>-->
+
+    <!--<color name="text_gray">#FFA0A0A0</color>-->
+    <!--<color name="white">#FFFFFFFF</color>-->
+    <!--<color name="search_input">#000000</color>-->
+    <!--<color name="search_hint">#000000</color>-->
+    <!--<color name="list_divider_gray">#FFAAAAAA</color>-->
+
+    <!--<color name="gray_e">#FFEEEEEE</color>-->
+    <!--<color name="gray_d">#FFDDDDDD</color>-->
+    <!--<color name="gray_c">#FFCCCCCC</color>-->
+    <!--<color name="gray_b">#FFBBBBBB</color>-->
+    <!--<color name="gray_a">#FFAAAAAA</color>-->
+    <!--<color name="tranlation_gray_8_a">#88aaaaaa</color>-->
+    <!--<color name="black_0">#FF000000</color>-->
+    <!--<color name="black_1">#FF111111</color>-->
+    <!--<color name="black_2">#FF222222</color>-->
+    <!--<color name="black_3">#FF333333</color>-->
+    <!--<color name="black_4">#FF444444</color>-->
+    <!--<color name="black_5">#FF555555</color>-->
+    <!--<color name="skin_bg">#FFFFFFFF</color>-->
+    <!--<color name="half_black_4">#88444444</color>-->
+</resources>

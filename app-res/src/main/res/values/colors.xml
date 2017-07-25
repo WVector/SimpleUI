@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimaryDark">@color/colorPrimary</color>
+    <color name="colorPrimary">@color/main_color</color>
+    <color name="colorAccent">@color/third_color</color>
+
+    <color name="bg_color">#f7f7f7</color>
+
+    <color name="font_main_color">#282828</color>
+
+    <color name="font_main_color_gray">@color/gray_b</color>
+
+    <color name="head_view_text_color">#282828</color>
+
+    <color name="line_gap_color">@color/gray_a</color>
+
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="black">#FF000000</color>
+
+    <color name="gray">@color/gray_a</color>
+
+    <color name="green">#09bb07</color>
+
+
+
+
+    //配色 两种配色
+    <color name="main_color">#ffc900</color>
+    <!--<color name="main_color">#f2cc03</color>-->
+    <color name="third_color">#f76260</color>
+
+
+    <color name="text_gray">#FFA0A0A0</color>
+    <color name="search_input">#000000</color>
+    <color name="search_hint">#000000</color>
+    <color name="list_divider_gray">#FFAAAAAA</color>
+
+    <color name="gray_e">#FFEEEEEE</color>
+    <color name="gray_d">#FFDDDDDD</color>
+    <color name="gray_c">#FFCCCCCC</color>
+    <color name="gray_b">#FFBBBBBB</color>
+    <color name="gray_a">#FFAAAAAA</color>
+    <color name="black_0">#FF000000</color>
+    <color name="black_1">#FF111111</color>
+    <color name="black_2">#FF222222</color>
+    <color name="black_3">#FF333333</color>
+    <color name="black_4">#FF444444</color>
+    <color name="black_5">#FF555555</color>
+    <color name="skin_bg">#FFFFFFFF</color>
+    <color name="half_black_4">#88444444</color>
+
+
+    <color name="color1">#FF9929</color>
+    <color name="color2">#40003a</color>
+    <color name="color3">#bf045b</color>
+    <color name="color4">#c1a4ab</color>
+    <color name="color5">#f9eff1</color>
+
+
+</resources>

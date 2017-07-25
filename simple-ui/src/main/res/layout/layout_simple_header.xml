@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_header_left_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scaleType="center"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp"/>
+
+        <TextView
+            android:id="@+id/tv_header_left_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/head_view_text_color"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+        <!-- baseFragment的标题栏 -->
+
+        <TextView
+            android:id="@+id/tv_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/head_view_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <!-- 搜索栏 -->
+
+        <RelativeLayout
+            android:id="@+id/rl_search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/iv_header_right_menu"
+            android:layout_toRightOf="@+id/tv_header_left_menu"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/et_search_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="32.0dip"
+                android:background="@mipmap/search_bg"
+                android:drawablePadding="5.0dip"
+                android:gravity="center_vertical"
+                android:hint="请输入内容"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:paddingLeft="15.0dip"
+                android:singleLine="true"
+                android:textColor="@color/search_input"
+                android:textColorHint="@color/search_hint"
+                android:textSize="13.0sp"/>
+
+            <ImageView
+                android:id="@+id/iv_search_bar"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignRight="@+id/et_search_bar"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="4.0dip"
+                android:background="@mipmap/search"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_header_right_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scaleType="center"/>
+
+        <TextView
+            android:id="@+id/tv_header_right_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/head_view_text_color"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</RelativeLayout>

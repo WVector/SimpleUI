@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">main-color</string>
+
+    <string name="password_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+</resources>
