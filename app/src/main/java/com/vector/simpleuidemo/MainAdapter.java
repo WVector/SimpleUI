@@ -2,19 +2,23 @@ package com.vector.simpleuidemo;
 
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.util.Log;
 import android.view.ViewGroup;
+
 
 /**
  * Created by fengjunming_t on 2016/6/22 0022.
  */
 public class MainAdapter extends FragmentStatePagerAdapter {
 
-    public static final int NUMBER = 4;
 
-    public MainAdapter(@NonNull FragmentManager fragmentManager) {
-        super(fragmentManager);
+    private static final String TAG = MainAdapter.class.getSimpleName();
+
+
+    public MainAdapter(@NonNull FragmentActivity activity) {
+        super(activity.getSupportFragmentManager());
 
     }
 
@@ -23,7 +27,7 @@ public class MainAdapter extends FragmentStatePagerAdapter {
      */
     @Override
     public int getCount() {
-        return NUMBER;
+        return FragmentFactory.NUMBER;
     }
 
     /**
@@ -33,11 +37,20 @@ public class MainAdapter extends FragmentStatePagerAdapter {
      */
     @Override
     public Fragment getItem(int position) {
+        Log.d(TAG, "getItem() called with: position = [" + position + "]");
         return FragmentFactory.createFragment(position);
     }
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
+        Log.d(TAG, "destroyItem() called with:  position = [" + position + "], object = [" + object + "]");
 //        super.destroyItem(container, position, object);
     }
+
+    @Override
+    public Object instantiateItem(ViewGroup container, int position) {
+        Log.d(TAG, "instantiateItem() called with:  position = [" + position + "]");
+        return super.instantiateItem(container, position);
+    }
+
 }

@@ -1,6 +1,10 @@
 package com.vector.simpleuidemo;
 
+import android.os.Handler;
+import android.os.Looper;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.vector.loadingpager.SimpleFragment;
@@ -12,6 +16,11 @@ import com.vector.loadingpager.SimplePager;
  */
 
 public abstract class TestFragment extends SimpleFragment {
+
+    @Override
+    protected boolean isLazy() {
+        return true;
+    }
 
     private CharSequence mName;
 
@@ -35,6 +44,13 @@ public abstract class TestFragment extends SimpleFragment {
     protected void initView(ViewGroup contentView) {
 
         mNameTv = (TextView) contentView.findViewById(R.id.tv_name);
+        Button button = (Button) contentView.findViewById(R.id.btn_clear);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentFactory.clear();
+            }
+        });
 
 
     }
@@ -42,14 +58,32 @@ public abstract class TestFragment extends SimpleFragment {
     @Override
     protected void doBusiness() {
 //        String name = getBundle().getString("name", "");
-        mNameTv.setText(getName());
-        show(SimplePager.ResultType.RESULT);
+
+//        getActivity().runOnUiThread(new Runnable() {
+//            @Override
+//            public void run() {
+//
+//            }
+//        });
+
+
+        Handler handler = new Handler(Looper.getMainLooper());
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                mNameTv.setText(getName());
+                show(SimplePager.ResultType.RESULT);
+            }
+        }, 3000);
+
+
     }
 
     @Override
     protected int getLayoutResId() {
         return R.layout.fragment_test;
     }
+
 
     public abstract CharSequence getName();
 }

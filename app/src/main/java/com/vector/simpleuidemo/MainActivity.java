@@ -64,10 +64,12 @@ public class MainActivity extends SimpleActivity implements BottomNavigationView
         mViewPager.addOnPageChangeListener(this);
 
 
-        mViewPager.setAdapter(new MainAdapter(getSupportFragmentManager()));
+        mViewPager.setAdapter(new MainAdapter(this));
 
 
         show(SimplePager.ResultType.RESULT);
+
+
     }
 
     @Override
