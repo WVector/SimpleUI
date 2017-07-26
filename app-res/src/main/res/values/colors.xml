@@ -27,8 +27,8 @@
 
 
     //配色 两种配色
-    <color name="main_color">#ffc900</color>
-    <!--<color name="main_color">#f2cc03</color>-->
+    <!--<color name="main_color">#ffc900</color>-->
+    <color name="main_color">@color/color3</color>
     <color name="third_color">#f76260</color>
 
 
